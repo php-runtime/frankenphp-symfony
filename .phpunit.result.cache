@@ -1,0 +1,1 @@
+{"version":2,"defects":{"Runtime\\FrankenPhpSymfony\\Tests\\RuntimeTest::testGetRunner":5},"times":{"Runtime\\FrankenPhpSymfony\\Tests\\RunnerTest::testRun":0.003,"Runtime\\FrankenPhpSymfony\\Tests\\RuntimeTest::testGetRunner":0.004}}
