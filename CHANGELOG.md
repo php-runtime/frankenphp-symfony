@@ -2,7 +2,7 @@
 
 ## 0.3.0
 
-- Enable support for Symfony 7
+- Enable support for Symfony 8
 - Drop support for Symfony 5.4 (EOL)
 
 ## 0.2.0
