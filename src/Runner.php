@@ -41,7 +41,7 @@ class Runner implements RunnerInterface
             // Merge the environment variables coming from DotEnv with the ones tied to the current request
             $_SERVER += $server;
 
-            $sfRequest = Request::createFromGlobals();
+            $sfRequest = $this->getSymfonyRequest();
             $sfResponse = $this->kernel->handle($sfRequest);
 
             $sfResponse->send();
@@ -59,5 +59,10 @@ class Runner implements RunnerInterface
         } while ($ret && (-1 === $this->loopMax || ++$loops < $this->loopMax));
 
         return 0;
+    }
+
+    protected function getSymfonyRequest(): Request
+    {
+        return Request::createFromGlobals();
     }
 }
